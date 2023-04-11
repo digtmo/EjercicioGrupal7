@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Te lo Vendo - Sistema de Pedidos en Línea</title>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+    
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Te lo Vendo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" >Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="./estadisticas.html" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./contacto.html" class="nav-link active">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       
+        <h1 class="text-center">Te lo Vendo. Todo para tu Mascota</h1>
+        
+        
+        <p class="estracto_de_la_pagina">Te lo Vendo es un emprendimiento de jóvenes que ofrece productos de calidad para tus mascotas a través de un sistema de pedidos en línea.</p>
+    
+        <main>
+
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <section> 
+                    <h2>Nuestros productos</h2>
+                    <p>Aquí podrás encontrar todo lo que necesitas para tu perruno amigo.</p>
+                    <ul>
+                        <li>Alimento</li>
+                        <li>Cama Perro</li>
+                        <li>Ropa</li>
+                        <li>Galletas</li>
+                    </ul>
+                   </section>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <section>
+                        <div class="row">
+                            <h2>Galería de imágenes</h2>
+                            <img class="col-sm-3 col-md-6 img-fluid" src="./assets/img/1.jpg">
+                            <img class="col-sm-3 col-md-6 img-fluid" src="./assets/img/2.jpg" alt="Ropita">
+                            <img class="col-sm-3 col-md-6 img-fluid" src="./assets/img/3.jpg" alt="Galletas">
+                            <img class="col-sm-3 col-md-6 img-fluid" src="./assets/img/4.jpg">
+                        </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            
+           <div id="jquery1">
+            <p>Aca modificaremos con JQuery</p>
+           </div>
+       
+        </main>
+
+        <footer class="fixed-bottom">
+            <p>Desarrollado por Grupo 3 , Para Curso de Desarrollo Web  ©️ 2023</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>       
+         <script src="jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>  
+
+<script>
+      $(document).ready(function() {
+			// Cambiar el color de fondo del elemento con el ID "jquery1" a rojo
+			$("jquery1").css("background-color", "red");
+			
+			// Añadir la clase "destacado" al elemento con el ID "mi-elemento"
+			$("#mi-elemento").addClass("destacado");
+			
+			// Eliminar la clase "destacado" del elemento con el ID "mi-elemento" después de 3 segundos
+			setTimeout(function() {
+				$("#mi-elemento").removeClass("destacado");
+			}, 3000);
+		});
+</script>
